@@ -1,0 +1,27 @@
+.bdg-fondo-principal {
+  background-color: #A04000 !important;
+  color: #ffffff !important;
+}
+
+.bdg-texto-principal {
+  color: #A04000 !important;
+}
+
+.bdg-boton-accion {
+  background-color: #A04000 !important;
+  color: #ffffff !important;
+  border: 2px solid #A04000 !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.bdg-boton-accion:hover {
+  background-color: #7a3100 !important;
+  border-color: #7a3100 !important;
+}
+
+/* Gestalt: Región Común para aislar visualmente secciones */
+.bdg-region-destacada {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 2rem;
+}
