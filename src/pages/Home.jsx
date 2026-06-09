@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Home = () => {
+const Home = () => {
   const bdgInventario = [
     { id: 'prod-1', nombre: 'Arroz Extra 1kg', precio: 'S/ 4.50' },
     { id: 'prod-2', nombre: 'Aceite Vegetal 1L', precio: 'S/ 12.00' },
@@ -43,3 +43,4 @@ export const Home = () => {
     </main>
   );
 };
+export default Home; 

@@ -1,16 +1,23 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { NavBar } from './components/layout/NavBar';
-import { Footer } from './components/layout/Footer';
-import { Home } from './pages/Home';
-//import './App.css';
+import Home from './pages/Home';
+import Productos from './pages/Productos';
+import Contacto from './pages/Contacto';
 
-function App() {
+const App = () => {
   return (
-    <div className="d-flex flex-column min-vh-100 bdg-contenedor-maestro">
+    <BrowserRouter>
       <NavBar />
-      <Home />
-      <Footer />
-    </div>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/productos" element={<Productos />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
